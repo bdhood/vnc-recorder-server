@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    vnc-recorder-server:
+        build: .
+        volumes:
+            - ./:/recordings
+        ports:
+            - 25192:25192
